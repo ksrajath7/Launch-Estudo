@@ -1,7 +1,8 @@
 body {
-  height: 100vh;
   font-size: 16px;
+  height: 100vh;
   display: flex;
+  align-items: center;
   font-family: "Helvetica", "Arial", sans-serif;
   text-align: center;
   background-color: #f8faff;
@@ -47,13 +48,13 @@ body {
   display: none;
   top: -75%;
   background-image: radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, transparent 20%, #3e00ff 20%, transparent 30%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #3e00ff 15%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%);
-  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  background-size: 30% 30%, 40% 40%, 15% 15%, 20% 20%, 18% 18%, 30% 30%, 15% 15%, 30% 30%, 18% 18%;
 }
 .bubbly-button:after {
   display: none;
   bottom: -75%;
   background-image: radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #3e00ff 15%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%);
-  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  background-size: 35% 35%, 20% 20%, 18% 18%, 20% 40%, 35% 35%, 10% 10%, 40% 40%;
 }
 .bubbly-button:active {
   transform: scale(0.9);
@@ -62,11 +63,11 @@ body {
 }
 .bubbly-button.animate:before {
   display: block;
-  animation: topBubbles ease-in-out 0.75s forwards;
+  animation: topBubbles ease-in-out 0.9s forwards;
 }
 .bubbly-button.animate:after {
   display: block;
-  animation: bottomBubbles ease-in-out 0.75s forwards;
+  animation: bottomBubbles ease-in-out 0.9s forwards;
 }
 
 @keyframes topBubbles {
