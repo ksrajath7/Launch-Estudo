@@ -1,34 +1,54 @@
 body {
   font-size: 16px;
-  height: 100vh;
   display: flex;
   align-items: center;
   font-family: "Helvetica", "Arial", sans-serif;
   text-align: center;
-  background-color: #f8faff;
+  background-color: #fff;
 }
 
 .rocket{
   margin-left: 20px;
 }
 
+.logoContainer{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.logo{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  height:auto;
+  width:auto;
+}
+
+.title{
+  font-size: 1em;
+  color: #5623f0;
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+
 .bubbly-button {
+
   font-family: "Helvetica", "Arial", sans-serif;
   display: flex;
   align-items: center;
-  font-size: 1.5em;
-  padding: 1em 2em;
+  font-size: 2em;
+  padding: 1.1em 2.5em;
   margin: auto;
+  margin-top: 160px;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #3e00ff;
+  background-color: #4913eb;
   color: #fff;
-  border-radius: 40px;
-  border: none;
+  border-radius: 200px;
+  border: 9px solid #5623f0;
   cursor: pointer;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(25, 0, 255, 0.3);
+  box-shadow: 0 2px 25px #6b3cf87a;
 }
 .bubbly-button:focus {
   outline: 0;
@@ -46,19 +66,19 @@ body {
 }
 .bubbly-button:before {
   display: none;
-  top: -75%;
-  background-image: radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, transparent 20%, #3e00ff 20%, transparent 30%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #3e00ff 15%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%);
-  background-size: 30% 30%, 40% 40%, 15% 15%, 20% 20%, 18% 18%, 30% 30%, 15% 15%, 30% 30%, 18% 18%;
+  top: -95%;
+  background-image: radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, transparent 20%, #5623f0 20%, transparent 30%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, transparent 10%, #5623f0 15%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%);
+  background-size: 30% 30%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 30% 30%, 15% 15%, 30% 30%, 18% 18%;
 }
 .bubbly-button:after {
   display: none;
-  bottom: -75%;
-  background-image: radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #3e00ff 15%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%), radial-gradient(circle, #3e00ff 20%, transparent 20%);
-  background-size: 35% 35%, 20% 20%, 18% 18%, 20% 40%, 35% 35%, 10% 10%, 40% 40%;
+  bottom: -95%;
+  background-image: radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, transparent 10%, #5623f0 15%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%), radial-gradient(circle, #5623f0 20%, transparent 20%);
+  background-size: 20% 20%, 20% 20%, 18% 18%, 20% 40%, 35% 35%, 10% 10%, 20% 20%;
 }
 .bubbly-button:active {
   transform: scale(0.9);
-  background-color: #3200c7;
+  background-color: #4913eb;
   box-shadow: 0 2px 25px rgba(25, 0, 255, 0.3);;
 }
 .bubbly-button.animate:before {
@@ -92,5 +112,17 @@ body {
   100% {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+@media(min-width: 800px){
+  .logo{
+    height: 140.621px;
+    width: 508.113px;
+  }
+  .logoContainer{
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
