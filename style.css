@@ -22,7 +22,8 @@ body {
   border-radius: 30px;
   border: 2px solid #926eff;
   margin-bottom: 20px;
-  height:60px;
+  height: 60px;
+  width: auto;
 }
 
 .title{
@@ -113,6 +114,13 @@ body {
   100% {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+@media(min-width: 400px){
+  .logo{
+    height: 70px;
   }
 }
 
