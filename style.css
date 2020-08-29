@@ -17,8 +17,11 @@ body {
 }
 
 .logo{
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  padding:30px 30px;
+  border-radius: 30px;
+  border: 2px solid #926eff;
+  margin-bottom: 20px;
   height:auto;
   width:auto;
 }
@@ -26,7 +29,6 @@ body {
 .title{
   font-size: 1em;
   color: #5623f0;
-  margin-top: 30px;
   margin-bottom: 120px;
 }
 
@@ -35,10 +37,10 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   display: flex;
   align-items: center;
-  font-size: 2em;
-  padding: 1.1em 2.5em;
+  font-size: 1.5em;
+  padding: 1em 2.5em;
   margin: auto;
-  margin-top: 160px;
+  margin-top: 120px;
   -webkit-appearance: none;
   appearance: none;
   background-color: #4913eb;
@@ -117,6 +119,10 @@ body {
 
 
 @media(min-width: 800px){
+  .title{
+    font-size: 1.1em;
+
+  }
   .logo{
     height: 140.621px;
     width: 508.113px;
