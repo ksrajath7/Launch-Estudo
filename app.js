@@ -8,8 +8,9 @@ var animateButton = function(e) {
     },1000);
 
     setTimeout(function(){
-      window.location.replace("www.estudo.in/")
-    },1000);
+      window.location.assign("https://www.estudo.in/");
+      
+    },50);
     
 
   };
