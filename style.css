@@ -22,8 +22,7 @@ body {
   border-radius: 30px;
   border: 2px solid #926eff;
   margin-bottom: 20px;
-  height:auto;
-  width:auto;
+  height:80px;
 }
 
 .title{
@@ -121,7 +120,6 @@ body {
 @media(min-width: 800px){
   .title{
     font-size: 1.1em;
-
   }
   .logo{
     height: 140.621px;
